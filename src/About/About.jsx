@@ -23,7 +23,7 @@ const About = () => {
             variants={variant}
             initial={"initial"}
             whileInView={"animate"}
-            src="../../public/me.png"
+            src="../public/me.png"
             alt=""
           />
         </div>
@@ -43,7 +43,7 @@ const About = () => {
             whileInView={{
               x: 0,
               opacity: 1,
-              transition: { duration: 1, ease: "easeInOut",delay:1 },
+              transition: { duration: 1, ease: "easeInOut", delay: 1 },
             }}
           >
             Hi, I'm Az-eddine Serhani, a 20-year-old web developer from Morocco.
