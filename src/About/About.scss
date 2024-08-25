@@ -1,0 +1,64 @@
+@import "../index.scss";
+
+.about {
+  height: 100%;
+  .wrapper {
+    width: 1366px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    @include mobile {
+      // overflow: visible;
+      align-items: start;
+      justify-content: start;
+      width: 100vw;
+      flex-direction: column;
+    }
+    .left {
+      flex: 1;
+      height: 50%;
+      @include mobile {
+        display: none;
+      }
+      img {
+        height: 286px;
+        width: 286px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .right {
+      flex: 2;
+      height: 50%;
+      @include mobile {
+        // overflow: hidden;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Reduced gap for mobile */
+      }
+      h2 {
+        color: #f06000;
+        font-size: 100px;
+        @include mobile {
+          font-size: 50px;
+        }
+      }
+      p {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 34px;
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+      
+    }
+  }
+}

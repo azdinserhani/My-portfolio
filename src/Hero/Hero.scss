@@ -1,0 +1,70 @@
+@import "../index.scss";
+.hero {
+  height: 100%;
+  background-image: url("../../public/hero.jpg");
+  background-size: cover;
+  .wrapper {
+    width: 1366px;
+
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    @include mobile {
+      width: 100%;
+      gap: 50px;
+    }
+    h1 {
+      font-size: 120px;
+      @include mobile {
+        font-size: 50px;
+        text-align: center;
+      }
+    }
+    p {
+      font-size: 43px;
+      margin-top: -20px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 200;
+      @include mobile {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    .social {
+      display: flex;
+      gap: 15px;
+      margin-top: 50px;
+      a {
+        transition: all 0.2s ease-in-out;
+        color: white;
+        font-size: 40px;
+        &:hover {
+          color: #f06000;
+        }
+      }
+    }
+    .scroll {
+      font-size: 30px;
+      position: absolute;
+      bottom: 50px;
+      a {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        display: flex;
+        color: white;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: #f06000;
+        }
+      }
+    }
+  }
+}

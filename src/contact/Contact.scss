@@ -1,0 +1,93 @@
+@import "../index.scss";
+
+.contact {
+  display: flex;
+  height: 100%;
+  width: 1366px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  @include mobile {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .infoContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 50%;
+     @include mobile {
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+      margin-top: 70px;
+    }
+    h2 {
+      font-size: 100px;
+      font-weight: bold;
+      color: #f06000;
+       @include mobile {
+        font-size: 36px;
+      }
+    }
+    .info {
+      h3 {
+        color: white;
+        font-size: 20px;
+      }
+      p {
+        color: rgba(217, 217, 217, 0.51);
+      }
+    }
+  }
+  .formContainer {
+    flex: 1;
+    height: 50%;
+    position: relative;
+    @include mobile {
+      padding: 50px;
+      width: 100%;
+    }
+    .formsvg {
+      stroke: #f06000;
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      input,
+      textarea {
+        border: none;
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 15px;
+        color: white;
+        font-size: 20px;
+         @include mobile {
+          padding: 10px;
+        }
+      }
+
+      button {
+        padding: 20px;
+        border-radius: 15px;
+        border: none;
+        background-color: #f06000;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+         @include mobile {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

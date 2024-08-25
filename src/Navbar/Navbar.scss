@@ -1,0 +1,59 @@
+@import "../index.scss";
+.navbar {
+  height: 50px;
+  position: relative;
+  z-index: 1000;
+  .wrapper {
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      width: 100vw;
+      justify-content: end;
+      padding-right: 20px;
+    }
+    gap: 50px;
+    height: 50px;
+    position: fixed;
+    left: 50%; // Start the wrapper at 50% from the left
+    transform: translateX(
+      -50%
+    ); // Shift it back by 50% of its own width to center it
+
+    .active {
+      color: #f06000;
+    }
+
+    a {
+      transition: all 0.2s ease-in-out;
+      @include mobile {
+        display: none;
+      }
+      &:hover {
+        color: #f06000;
+      }
+    }
+    .menu {
+      display: none;
+      @include mobile {
+        display: flex;
+      }
+    }
+  }
+  .sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    // z-index: 999;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+}

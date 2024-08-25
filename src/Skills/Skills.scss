@@ -1,0 +1,65 @@
+@import "../index.scss";
+
+.skills {
+  height: 100%;
+  overflow: hidden;
+  .wrapper {
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include mobile {
+      width: 100vw;
+    }
+    h2 {
+      color: #f06000;
+      font-size: 100px;
+      @include mobile {
+        font-size: 50px;
+      }
+    }
+    h3 {
+      font-size: 80px;
+      color: white;
+      @include mobile {
+        font-size: 40px;
+      }
+    }
+
+    .skillsContainer {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+
+      row-gap: 50px;
+      column-gap: 50px;
+      @include mobile {
+        grid-template-columns: repeat(2, auto);
+      }
+      .item {
+        // background-color: rgba(255, 255, 255, 0.212);
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mobile {
+          height: 100px;
+          width: 100px;
+        }
+
+        img {
+          height: 170px;
+          object-fit: cover;
+          @include mobile {
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
