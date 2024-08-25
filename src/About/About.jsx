@@ -23,7 +23,7 @@ const About = () => {
             variants={variant}
             initial={"initial"}
             whileInView={"animate"}
-            src="../../public/me.jpeg"
+            src="../../public/me.png"
             alt=""
           />
         </div>
