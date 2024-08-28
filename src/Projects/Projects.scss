@@ -42,10 +42,10 @@
       align-items: center;
       justify-content: center;
       gap: 50px;
+      height: 100%;
       @include mobile {
-        height: 100%;
         flex-direction: column;
-        gap: 100px;
+        gap: 200px;
       }
       .imageContainer {
         flex: 1;
@@ -56,32 +56,40 @@
           object-fit: cover;
           border-radius: 15px;
           @include mobile {
-            width: 100%;
-            max-height: 300px;
+            object-fit: contain;
           }
         }
       }
 
       .textContainer {
         flex: 1;
+        height: 50%;
         gap: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         @include mobile {
           // transform: none !important;
-          padding: 10px;
+          margin-top: 50px;
+          justify-content: center;
           align-items: center;
           text-align: center;
-          margin-bottom: -200px;
         }
         h2 {
           font-size: 80px;
           color: white;
+          @include mobile {
+            font-size: 36px;
+          }
         }
         p {
           font-size: 30px;
+          overflow: unset;
           color: rgba(255, 255, 255, 0.4);
+          @include mobile {
+            font-size: 20px;
+          }
         }
         button {
           background-color: #f06000;

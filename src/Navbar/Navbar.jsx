@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-
+import { motion } from "framer-motion";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -76,7 +76,17 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className="sideBar" style={{ display: open && "flex" }}>
+      <motion.div
+        className="sideBar"
+        style={{ display: open && "flex", transformOrigin: "right" }}
+        initial={{ opacity: 0, scaleX: 0 }}
+        whileInView={{
+          opacity: 1,
+          scaleX: 1,
+          transition: { duration: 1, ease: "easeInOut" },
+        }}
+        exit={{ opacity: 0, scaleX: 0, transition: { duration: 1 ,ease:"easeInOut"} }}
+      >
         <a onClick={() => setOpen(false)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +153,7 @@ const Navbar = () => {
             Say Hello
           </Link>
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ import bootstrap from "../../public/bootstrap.png";
 import pg from "../../public/pg.png";
 import jwt from "../../public/jwt.png";
 import node from "../../public/node.png";
-import  mon from "../../public/mon.png";
+import mon from "../../public/mon.png";
 import express from "../../public/express.png";
 import { motion } from "framer-motion";
 const frontEnd = [
@@ -55,7 +55,7 @@ const backEnd = [
   },
   {
     img: express,
-  }
+  },
 ];
 const Skills = ({ type }) => {
   return (
@@ -91,7 +91,7 @@ const Skills = ({ type }) => {
                   className="item"
                   whileHover={{ scale: 1.2 }}
                   key={index}
-                  initial={{ opacity: 0, y: 300 }}
+                  initial={{ opacity: 0, y: 200 }}
                   whileInView={{
                     opacity: 1,
                     y: 0,
@@ -113,7 +113,7 @@ const Skills = ({ type }) => {
                   className="item"
                   whileHover={{ scale: 1.2 }}
                   key={index}
-                  initial={{ opacity: 0, y: 300 }}
+                  initial={{ opacity: 0, y: 200 }}
                   whileInView={{
                     opacity: 1,
                     y: 0,
