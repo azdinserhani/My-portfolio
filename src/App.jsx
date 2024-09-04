@@ -5,10 +5,12 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Contact from "./contact/Contact";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
     <div>
+      <Analytics />
       <Navbar />
       <section id="home">
         <Hero />
@@ -25,7 +27,9 @@ const App = () => {
       <section>
         <Skills type={"Back-End"} />
       </section>
-      <section id="contact"><Contact/></section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 };
