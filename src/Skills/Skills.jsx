@@ -1,6 +1,6 @@
 import "./Skills.scss";
 import { motion } from "framer-motion";
-import {frontEnd,backEnd} from "../mockData.jsx"
+import {frontEnd,backEnd} from "../mockData"
 
 const Skills = ({ type }) => {
   return (
@@ -47,7 +47,6 @@ const Skills = ({ type }) => {
                     },
                   }}
                 >
-                  {/* <img src={item.img} alt="" /> */}
                   {item.img}
                 </motion.div>
               );
@@ -70,7 +69,6 @@ const Skills = ({ type }) => {
                     },
                   }}
                 >
-                  {/* <img src={item.img} alt="" /> */}
                   {item.img}
                 </motion.div>
               );
