@@ -1,62 +1,7 @@
 import "./Skills.scss";
-import react from "../../public/react.png";
-import css from "../../public/css.png";
-import sass from "../../public/sass.png";
-import js from "../../public/js.png";
-import html from "../../public/html.png";
-import bootstrap from "../../public/bootstrap.png";
-import pg from "../../public/pg.png";
-import jwt from "../../public/jwt.png";
-import node from "../../public/node.png";
-import mon from "../../public/mon.png";
-import express from "../../public/express.png";
 import { motion } from "framer-motion";
-const frontEnd = [
-  {
-    name: "React Js",
-    img: react,
-  },
-  {
-    name: "Css",
-    img: css,
-  },
-  {
-    name: "Html",
-    img: html,
-  },
-  {
-    name: "Javascript",
-    img: js,
-  },
-  {
-    name: "Sass",
-    img: sass,
-  },
-  {
-    name: "Bootstrap",
-    img: bootstrap,
-  },
-];
-const backEnd = [
-  {
-    img: node,
-  },
-  {
-    img: pg,
-  },
-  {
-    img: jwt,
-  },
-  {
-    img: js,
-  },
-  {
-    img: mon,
-  },
-  {
-    img: express,
-  },
-];
+import {frontEnd,backEnd} from "../mockData.jsx"
+
 const Skills = ({ type }) => {
   return (
     <div className="skills">
@@ -102,7 +47,8 @@ const Skills = ({ type }) => {
                     },
                   }}
                 >
-                  <img src={item.img} alt="" />
+                  {/* <img src={item.img} alt="" /> */}
+                  {item.img}
                 </motion.div>
               );
             })}
@@ -124,7 +70,8 @@ const Skills = ({ type }) => {
                     },
                   }}
                 >
-                  <img src={item.img} alt="" />
+                  {/* <img src={item.img} alt="" /> */}
+                  {item.img}
                 </motion.div>
               );
             })}
