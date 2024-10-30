@@ -4,7 +4,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import pharmacy from "../../public/pharmacy.png";
 import YumYard from "../../public/YumYard.png";
 import Landing from "../../public/Landing.png";
-import portfolio from "../../public/portfolio.png";
+import ecommerce from "../../public/eCommerce.png";
 
 const items = [
   {
@@ -30,10 +30,10 @@ const items = [
   },
   {
     id: 4,
-    title: "Portfolio Website",
-    img: portfolio,
-    des: "Welcome to my personal portfolio! This is my portfolio website, showcasing my projects, skills, and experiences as a web developer.",
-    url:"https://github.com/azdinserhani/My-portfolio.git"
+    title: "E-Commerce Website",
+    img: ecommerce,
+    des: "A full-stack e-commerce platform with a React client and an admin panel for managing products, orders, and users. The API supports smooth data handling for a seamless shopping experience.",
+    url: "https://github.com/azdinserhani/e-commerce-client-side.git",
   },
 ];
 
