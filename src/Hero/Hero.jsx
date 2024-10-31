@@ -30,7 +30,7 @@ const Hero = () => {
         animate={"animate"}
       >
         <motion.h1 variants={variant} initial={"initial"} animate={"animate"}>
-          I'm Az-eddine Serhani
+          Az-eddine Serhani
         </motion.h1>
         <p>Start scrolling to learn more about me.</p>
         <div className="social">
@@ -42,6 +42,16 @@ const Hero = () => {
           </a>
           <a href="https://github.com/azdinserhani">
             <GitHubIcon fontSize="inherit" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="../../public/myCv.pdf"
+            download="Az-eddine_Serhani_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Download CV</button>
           </a>
         </div>
         <div className="scroll">
